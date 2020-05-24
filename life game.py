@@ -201,7 +201,7 @@ class Canvas_Frame:
                         self.canvas.itemconfig(self.pixels[line][col],
                                                fill='white' if self.log[self.currentGen][line][col]\
                                                    else 'black')
-            self.canvas.after(250, self.newframe)
+            self.canvas.after(200, self.newframe)
         else:
             self.currentGen = -1
             self.startButton['state'] = NORMAL
